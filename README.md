@@ -1,11 +1,13 @@
-# CCTV Crawler 
+# CCTV Crawler
 
 Simple CCTV Crawler for Jogja ATCS CCTV
 
 ## Installation
 
 To install this crawler, follow the required steps below:
+
 1. Clone the repository:
+
 ```
 git clone https://github.com/prammmoe/cctv-crawler.git
 ```
@@ -16,7 +18,7 @@ git clone https://github.com/prammmoe/cctv-crawler.git
 pip install opencv-python
 ```
 
-3. Run the script using (run from src) 
+3. Run the script using (run from src)
 
 ```
 python main.py
@@ -30,7 +32,7 @@ python src/main.py
 
 ## Documentations
 
-### Locations 
+### Locations
 
 For the locations code below:
 
@@ -48,6 +50,53 @@ location = [
     "SimpangTerbanTimur",
     "SimpangDemanganSelatan",
     "SimpangTerbanBarat",
+    "SimpangBalaikotaTimur",
+    "Warungboto1",
+    "Simpang_KolSugiono2",
+    "SimpangPasarTeloUtara",
+    "KMNol",
+    "BPK",
+    "ViewSimpangTugu",
+    "ViewBukitKlangon",
+    "ViewAlunAlunKidul",
+    "ViewBaronTimur",
+    "ViewSambisari",
+    "Juadi",
+    "SimpangAtmosukarto",
+    "SimpangDeBritto",
+    "Sajiono",
+    "SimpangMandalakrida",
+    "SimpangBasen",
+    "Warungboto2",
+    "Simpang_MenteriSupeno2",
+    "MargoUtomo_SelatanOlive",
+    "MargoUtomo_GowonganLor",
+    "MargoUtomo_WismaRatih",
+    "SimpangGambiranBarat",
+    "SimpangRejowinangunTimur",
+    "Simpang_SugengJeroni2",
+    "MargoUtomo_TokoCatWahyu",
+    "SimpangBalaikota",
+    "AhmadJazuli",
+    "FMNoto",
+    "SimpangAmongrogoTimur",
+    "ParkiranNgabean",
+    "SimpangGambiranTimur",
+    "Jlagran",
+    "SimpangPatangpuluhan",
+    "SimpangBorobudurPlaza",
+    "SimpangMelia",
+    "Simpang_MenteriSupeno1",
+    "Simpang_SugengJeroni1",
+    "YosSudarso",
+    "Terban",
+    "SimpangBausasran",
+    "Pingit",
+    "MargoUtomo_WijayaBaruTravel",
+    "Simpang_PasarGading2",
+    "SimpangJatikencana",
+    "KyaiMojo1",
+    "SimpangGaleriaTImurSelatan"
 ]
 ```
 
@@ -72,25 +121,28 @@ Complete structure:
     │   {location}              # Image folder
     │   └──
     │   {image files}
-    ├── src                     # Source files 
+    ├── src                     # Source files
     │   └──
-    │   main.py                 # main script 
+    │   main.py                 # main script
     ├── .gitignore
     └── README.md
 
-
 ### Endpoint
 
-1. MAM Jogjaprov Endpoint 
+1. MAM Jogjaprov Endpoint
+
 ```
 https://mam.jogjaprov.go.id:1937/{cctv-category}
 ```
+
 For the CCTV Category, you can change based what shown on the website https://mam.jogjaprov.go.id/cctvs
 
 We suggest just using two endpoint: /atcs/ and /atcs-kota/
 
 2. CCTV Jogjakota Endpoint
+
 ```
 https://cctvjss.jogjakota.go.id/atcs/
 ```
+
 For the CCTV endpoint, we only used /atcs/ as referred from https://cctv.jogjakota.go.id/
