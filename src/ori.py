@@ -22,14 +22,16 @@ capturing = True
 # i = input("Pilih lokasi: ")
 count_pic = int(input("Jumlah gambar: "))
 
+directory = "husein"
+
 # vcap = cv2.VideoCapture("https://cctvjss.jogjakota.go.id/atcs/" + location[int(i) - 1] + ".stream/playlist.m3u8")
-vcap = cv2.VideoCapture("https://pelindung.bandung.go.id:3443/video/HIKSVISION/kirconbinongg.m3u8")
+vcap = cv2.VideoCapture("https://pelindung.bandung.go.id:3443/video/HIKSVISION/" + directory + ".m3u8")
 fps = vcap.get(cv2.CAP_PROP_FPS)
 wt = 1 / fps
 
 # Create directory based on location
 # directory = location[int(i) - 1]
-directory = "Kirconbinongg"
+
 complete_dir = 'images/' + directory
 if not os.path.exists(complete_dir):
     os.makedirs(complete_dir)
